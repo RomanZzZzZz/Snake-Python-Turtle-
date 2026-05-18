@@ -20,7 +20,12 @@ def playing_area():
 class Head(Turtle):
   def __init__(self, screen, body):
     super().__init__()
-    pass
+    self.shape("square")
+    self.color(generate_color())
+    self.penup()
+    self.goto(0, 0)
+    self.direction = "up"
+    self.alive = True
 
   def up(self):
     pass
